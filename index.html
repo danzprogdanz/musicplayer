@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aplay_arrow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./imagens/reshot-icon-astronout-ANHZ2P59XR.svg">
+
+    <title>Blinkers Removed - Man Of No Ego</title>
+
+
+</head>
+<body>
+
+    <div class="contact">
+        <a href="https://github.com/danzprogdanz" target='_blank'><img class="c-gith" src="./imagens/iconmonstr-github-1.svg"></a>
+        <a href="https://www.linkedin.com/in/daniel-viana-a6bb59174/" target='_blank'><img  class="c-link" src="./imagens/iconmonstr-linkedin-3.svg"></a>
+    </div>
+
+    <div class="container">
+        <div class="cima">
+            <div class="albumimage"> <img id="ai" src="./imagens/album/man-of-no-ego-blinkers-removed.jpg"></div>
+            <div class="bandinfos">
+
+                <div class="linhai">
+                    <div class="pi">Album:</div>
+                    <div class="ri">Blinkers Removed</div>
+                </div>
+
+                <div class="linhaii">
+                    <div class="pii">Artist:</div>
+                    <div class="rii">Man of no ego</div>
+                </div>
+
+                <div class="linhaiii">
+                    <div class="piii">Year:</div>
+                    <div class="riii">2015</div>
+                </div>
+
+                <div class="linhaiv">
+                    <div class="piv">Genre:</div>
+                    <div class="riv">Eletronic</div>
+                </div>
+
+                <div class="linhav">
+                    <div class="pv">Style:</div>
+                    <div class="rv">Psybient</div>
+                </div>
+
+                <div class="linhavi">
+                    <div class="pvi">Duration:</div>
+                    <div class="rvi">58:59</div>
+                </div>
+            
+            </div>
+            <div class="musicmenu">
+
+                <div class="musi">
+                    Tracklist
+                </div>
+                <br><br>
+                <div class="musii">
+                    <div class="mii" onclick="t1()">00:00</div>
+                    <div class="iipoint">•</div>
+                    <div class="kii">Celestial Medicine</div>
+                </div>
+
+                <div class="musiii">
+                    <div class="miii" onclick="t2()">07:20</div>
+                    <div class="iiipoint">•</div>
+                    <div class="kiii">Blinkers Removed</div>
+                </div>
+                <br>
+                <div class="musiv">
+                    <div class="miv" onclick="t3()">15:20</div>
+                    <div class="ivpoint">•</div>
+                    <div class="kiv">Tara</div>
+                </div>
+
+                <div class="musv">
+                    <div class="mv" onclick="t4()">23:47</div>
+                    <div class="vpoint">•</div>
+                    <div class="kv">Harmony Of The Universe</div>
+                </div>
+
+                <div class="musvi">
+                    <div class="mvi" onclick="t5()">32:30</div>
+                    <div class="vipoint">•</div>
+                    <div class="kvi">Black In White</div>
+                </div>
+
+                <div class="musvii" onclick="t6()">
+                    <div class="mvii">38:25</div>
+                    <div class="viipoint">•</div>
+                    <div class="kvii">Calm With Me</div>
+                </div>
+
+                <div class="musviii" onclick="t7()">
+                    <div class="mviii">46:20</div>
+                    <div class="viiipoint">•</div>
+                    <div class="kviii">The Continuum</div>
+                </div>
+
+                <div class="musix" onclick="t8()">
+                    <div class="mix">53:58</div>
+                    <div class="ixpoint">•</div>
+                    <div class="kix">Shadow Of Breath</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tocador">
+           <audio id="audio1" src="https://od.lk/s/NDhfNDkxNTM5MjZf/Man%20Of%20No%20Ego%20%20Blinkers%20Removed%20432hz%20album.mp3" preload="metadata"></audio> 
+           <button id="playpause" onclick="togglePlay()">a</button>
+           
+           <button id="parar" onclick="parar()">c</button>
+           <button id="voltar" onclick="voltar()">d</button>
+           <button id="avancar" onclick="avancar()">e</button>
+            <div class="row_valign-wrapper">
+                <div class="col s2" id="current-duration" style="flex:1;">00:00</div>
+                
+                <div class="col s6 range-field valign-wrapper">
+                    <label>
+                    <input type="range" min=0 max=999999 id="seekbar" step=1 value="0">
+                    </label>
+                </div>
+                <div class="col s2" id="total-duration" style="flex:1;">58:59</div>
+            </div>
+           <button id="iconesom" onclick="volmute()">g</button>
+           <div class="rowvol">
+                <div class="col s3 range-field valign-wrapper">
+                    <input type="range" min=0 max=100 id="volcontrol" step=1 oninput="thisVolume(this.value)" onchange="thisVolume(this.value)" >
+                    <div id="vol"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<script src="script/index.js" ></script>   
+
+</body>
+</html>
+
+
+<!--<audio id="music" >
+            <source src="./audio/Man Of No Ego  Blinkers Removed 432hz album.mp3" type="audio/mp3"  >
+         </audio>-->
